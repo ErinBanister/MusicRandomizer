@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Music Randomizer</string>
+    <string name="allSongs">Randomize \nAll Songs</string>
+    <string name="category">Randomize \nStyles</string>
+    <string name="album">Randomize \nAlbums</string>
+    <string name="year">Randomize \nby Years</string>
+    <string name="rating">Randomize \nby Ratings</string>
+    <string name="songs">Songs</string>
+    <string name="selections">Selections</string>
+    <string name="selectName">Name</string>
+    <string name="numSongs">Number of Songs</string>
+    <string name="playTime">Total Play Time</string>
+    <string name="songTitle">Title</string>
+    <string name="songArtist">Artist</string>
+    <string name="songAlbum">Album</string>
+    <string name="songLength">Length</string>
+    <string name="songCategory">Style</string>
+    <string name="songYear">Year</string>
+    <string name="songRating">Rating</string>
+    <string name="current">Now Playing</string>
+    <string name="play">Play Now</string>
+    <string name="pause">Pause Song</string>
+    <string name="stop">Stop Playing</string>
+    <string name="forward">Forward song</string>
+</resources>

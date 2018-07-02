@@ -1,0 +1,10 @@
+2.000 Kilometros,David Summers,David Summers,04:08,pop,1998,4
+Gone,Frankie J,The One,04:33,pop,2005,4
+Harder To Breathe,Maroon 5,Songs About Jane,02:54,pop,2002,1
+IRM,Charlotte Gainsbourg,IRM,02:35,pop,2009,3
+Le Chat du CafA(c) des Artistes,Charlotte Gainsbourg,IRM,04:02,pop,2009,1
+She Will Be Loved,Maroon 5,Call And Response: The Remix Album,04:22,pop,2002,3
+Sweetest Goodbye,Maroon 5,Songs About Jane,04:31,pop,2002,1
+Tel Que Tu Es,Charlotte Gainsbourg,0.246527777777778,03:10,pop,2006,4
+This Love,Maroon 5,Call And Response: The Remix Album,02:58,pop,2002,5
+Through With You,Maroon 5,Songs About Jane,03:02,pop,2002,4

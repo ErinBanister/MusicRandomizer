@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="categoryPaddingHorizontal">16dp</dimen>
+    <dimen name="categoryPaddingVert">4dp</dimen>
+    <dimen name="categoryPaddingBetween">1dp</dimen>
+    <dimen name="categoryFontSize">15sp</dimen>
+    <dimen name="selectFontSizeMain">15sp</dimen>
+    <dimen name="selectFontSizeSecond">12sp</dimen>
+    <dimen name="selectPadding">4dp</dimen>
+    <dimen name="songPadding">4dp</dimen>
+    <dimen name="songFontSize">12sp</dimen>
+    <dimen name="categoryMargins">24dp</dimen>
+    <dimen name="footerHeight">60dp</dimen>
+</resources>

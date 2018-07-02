@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/songHeader"
+        layout="@layout/song_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+    <ListView
+        android:id="@+id/songListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/songFooter"
+        android:layout_below="@id/songHeader"
+        android:divider="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:id="@+id/songFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectPadding"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/categoryMargins" />
+
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/selectPadding"
+            android:text="@string/current"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/footerSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/songPadding"
+            android:singleLine="true"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/footerSongArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/songPadding"
+            android:singleLine="true"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/songPadding"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:padding="@dimen/songPadding"
+                android:scaleType="centerInside"
+                android:src="@drawable/stop" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/songPadding"
+                android:layout_weight="1"
+                android:contentDescription="@string/play"
+                android:padding="@dimen/songPadding"
+                android:scaleType="centerInside"
+                android:src="@drawable/play"
+                android:tag="play" />
+
+            <ImageView
+                android:id="@+id/forward"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/songPadding"
+                android:layout_weight="1"
+                android:contentDescription="@string/forward"
+                android:scaleType="centerInside"
+                android:src="@drawable/forward" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
