@@ -22,4 +22,8 @@
     <string name="pause">Pause Song</string>
     <string name="stop">Stop Playing</string>
     <string name="forward">Forward song</string>
+    <string name="home">Home</string>
+    <string name="Up">Up</string>
+    <string name="catSelect">Category Select</string>
+    <string name="songSelect">Song Selection</string>
 </resources>

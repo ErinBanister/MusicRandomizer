@@ -18,6 +18,7 @@ public class CategoryActivity extends AppCompatActivity {
          *  2. Drawable Location
          *  3. Class to Run when clicked
          */
+
         ArrayList<CategoryView> catArray = new ArrayList<>();
         catArray.add(new CategoryView(R.string.allSongs, R.drawable.boombox, SongActivity.class));
         catArray.add(new CategoryView(R.string.category, R.drawable.note, SelectActivity.class));

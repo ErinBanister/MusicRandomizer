@@ -39,6 +39,18 @@ public class SongActivity extends AppCompatActivity {
         gv.setFooterSongTitle((TextView) findViewById(R.id.footerSongTitle));
         listview = findViewById(R.id.songListView);
         createSongAdapterView();
+
+        //set action bar to xml field toolbar
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         buttonClick();
     }
 
@@ -54,6 +66,17 @@ public class SongActivity extends AppCompatActivity {
         listview.setAdapter(null);
         createSongAdapterView();
         buttonClick();
+
+        //set action bar to xml field toolbar
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     public void createSongAdapterView() {

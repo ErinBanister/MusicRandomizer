@@ -3,6 +3,7 @@ package com.example.android.musicrandomizer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 
 import java.io.BufferedReader;
@@ -20,6 +21,17 @@ public class SelectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.select);
         createSelectAdapterView();
+        //set action bar to xml field toolbar
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
     }
 
@@ -28,6 +40,16 @@ public class SelectActivity extends AppCompatActivity {
         ListView listview = findViewById(R.id.selectListView);
         listview.invalidate();
         createSelectAdapterView();
+        //set action bar to xml field toolbar
+        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 
     public void createSelectAdapterView() {

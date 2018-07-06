@@ -4,22 +4,38 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/note"
+        android:roundIcon="@mipmap/note"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".CategoryActivity">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".CategoryActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectActivity">
+        <activity
+            android:name=".SelectActivity"
+            android:label="@string/catSelect"
+            android:parentActivityName="com.example.android.musicrandomizer.CategoryActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicrandomizer.CategoryActivity" />
 
         </activity>
-        <activity android:name=".SongActivity">
+        <activity
+            android:name=".SongActivity"
+            android:label="@string/songSelect"
+            android:parentActivityName="com.example.android.musicrandomizer.SelectActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicrandomizer.SelectActivity" />
 
         </activity>
     </application>

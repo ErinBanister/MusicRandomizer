@@ -7,9 +7,4 @@
     <color name="fontPrimary">#FFFFFF</color>
     <color name="fontSecondary">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
-    <color name="categoryAll">#9AD1BF</color>
-    <color name="categoryStyle">#FFE4BC</color>
-    <color name="categoryAlbum">#E0F6B5</color>
-    <color name="categoryYear">#FFD2BC</color>
-    <color name="categoryRating">#FFFFBC</color>
 </resources>
