@@ -1,12 +1,13 @@
 package com.example.android.musicrandomizer;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -41,7 +42,7 @@ public class SongActivity extends AppCompatActivity {
         createSongAdapterView();
 
         //set action bar to xml field toolbar
-        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -68,7 +69,7 @@ public class SongActivity extends AppCompatActivity {
         buttonClick();
 
         //set action bar to xml field toolbar
-        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.songToolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
